@@ -33,6 +33,8 @@ class GestorIncidencias {
     for (var i = 0; i < incidencias.length; i++) {
       if (incidencias[i].id == id) {
         incidencias[i].estado = estado;
+        await datos.guardar(incidencias);//se llama a la funcion que guarda el cambio en la lista y no solo
+        //en memoria 
         break;
       }
     }
