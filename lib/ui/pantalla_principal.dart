@@ -190,6 +190,14 @@ class _PantallaPrincipalState extends State<PantallaPrincipal> {
                                               Text(item.estado, style: TextStyle(
                                                 color: colorEstado(item.estado), fontWeight: FontWeight.bold,
                                               )),
+                                              //mostrar la prioridad de la incidencia
+                                              const SizedBox(height: 4),
+                                              Text(
+                                                'Prioridad: ${item.prioridad}',
+                                                style: const TextStyle(
+                                                  fontWeight: FontWeight.w500,
+                                                ),
+                                              ),
                                             ],
                                           ),
                                         ),
